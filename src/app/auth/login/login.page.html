@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+
+  <form (submit)="doLogin()" class="form-div">
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col align-self-center size="auto">
+          <div color="tertiary" text-center>
+            <h3 color="tertiary">Become a Gardnr!</h3>
+          </div>
+
+          <div padding>
+            <ion-item>
+              <ion-label color ="tertiary" position="stacked">Email</ion-label>
+              <ion-input type="email" [(ngModel)]="account.email" name="email"> </ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label color="tertiary" position="stacked">Password</ion-label>
+              <ion-input type="password" [(ngModel)]="account.password" name="password"> </ion-input>
+            </ion-item>
+          </div>
+
+          <div padding>
+            <ion-button color="primary" size = "large" type="submit" expand="block">Login</ion-button>
+          </div>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+  <div color="tertiary" class="login-div" (click)="gotoSignup()" padding text-center>Need an account? Tap here to signup.</div>
+</ion-content>

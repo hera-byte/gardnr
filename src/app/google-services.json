@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "420963898679",
+    "firebase_url": "https://gardnr-e919c.firebaseio.com",
+    "project_id": "gardnr-e919c",
+    "storage_bucket": "gardnr-e919c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420963898679:android:52271aa84b386ae7",
+        "android_client_info": {
+          "package_name": "com.ionic.gardnr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtQse6jIAkcKMrYpjOCIbqzC2fbE-vBI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420963898679-oo7eeiskvu2pndh4vu5k3fq207ljb4ad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

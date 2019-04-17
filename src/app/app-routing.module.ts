@@ -2,8 +2,23 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule' }
+  {
+    path: '',
+    redirectTo: 'tabs',
+    pathMatch: 'full'
+  },
+  {
+    path: 'tabs',
+    loadChildren: './tabs/tabs.module#TabsPageModule'
+  },
+  { 
+    path: 'register', 
+    loadChildren: './auth/register/register.module#RegisterPageModule' 
+  },
+  { 
+    path: 'login', 
+    loadChildren: './auth/login/login.module#LoginPageModule' 
+  }
 ];
 @NgModule({
   imports: [
